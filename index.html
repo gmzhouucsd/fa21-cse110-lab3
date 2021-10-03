@@ -4,7 +4,7 @@
 
         <title>Planner Application First Brainstorm</title>
         <meta charset="utf-8">
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" type="image/favicon.ico" href="favicon.ico">
 
     </head>
     <body>
@@ -19,15 +19,17 @@
 
         <main>
 
-            <h2>Attendance List</h2>
-            <ul>
-                <li>Grant</li>
-                <li>Rishmal</li>
-                <li>Jim</li>
-            </ul>
+            <div>
+                <h2>Attendance List</h2>
+                <ul>
+                    <li>Grant</li>
+                    <li>Rishmal</li>
+                    <li>Jim</li>
+                </ul>
+            </div>
 
-            <h2>Meeting Agenda</h2>
             <nav>
+                <h2>Meeting Agenda</h2>
                 <ol>
                     <li><a href="#communication">Last Meeting: Communication Method</a></li>
                     <li><a href="#language">Programming Language</a></li>
@@ -37,34 +39,167 @@
 
             <h2>Meeting Notes</h1>
 
-            <h3 id="communication">Unfinished from Last Meeting: 0.0 Communication Method</h2>
-            <p>Deciding on the forms of communication that were discussed last meeting</p>
-            <ul>
-                <li>Discord will be the main method of communication between our group</li>
-                <li>A general chat will be created to allow for intercommunication between different group roles, and there will be seperate chats that focus on certain roles only</li>
-            </ul>
+            <section id="communication">
+                <h3>Unfinished from Last Meeting: 0.0 Communication Method</h3>
+                <p>Deciding on the forms of communication that were discussed last meeting</p>
+                <ul>
+                    <li>
+                        <b class="keywords">Discord</b> will be the main method of communication 
+                        between our group
+                    </li>
+                    <li>
+                        A general chat will be created to allow for intercommunication 
+                        between different group roles, and there will be seperate chats that focus 
+                        on certain roles only
+                    </li>
+                    <li>
+                        People can also use <span class="app">iMessage</span>, <span class="app">Instagram</span>, 
+                        or <span class="app">WeChat</span>
+                    </li>
+                    <li>
+                        The Discord will be set up by the <em>end</em> of the day
+                    </li>
+                </ul>
+            </section>
 
-            <h3 id="language">New: 1.0 Programming Language</h2>
-            <ul>
-                <li>Markdown will be used for meeting notes</li>
-                <li>HTML will be used for the programming of the planner application</li>
-                <li>CSS and JS will be used if the class allows it</li>
-            </ul>
+            <section id="language">
+                <h3>New: 1.0 Programming Language</h3>
+                <p>Deciding on the main languages used in our project</p>
+                <ul>
+                    <li>
+                        <b class="keywords">Markdown</b> will be used for meeting notes
+                    </li>
+                    <li>
+                        <b class="keywords">HTML</b> will be used for the programming of the planner 
+                        application
+                    </li>
+                    <li>
+                        <b class="keywords">CSS</b> and <b class="keywords">JS</b> will be used if 
+                        the class allows it
+                    </li>
+                </ul>
+            </section>
 
-            <h3 id="high_level">New: 2.0 High Level Planning of Planner</h2>
-            <ul>
-                <li>Home page will be a calendar displaying the days in the month, and clicking one of the days zooms you into the day for daily planning</li>
-                <li>Will include UI to allow users to add events to days. This will include the name, description, and time period of the events</li>
-                <li>Once events are finished, they will be crossed out, so the user can easily understand what events are up next</li>
-                <li>If we have time, we can also add an in-app reward system for successfully completed events</li>
-            </ul>
+            <section id="high_level">
+                <h3>New: 2.0 High Level Planning of Planner</h3>
+                <p>Planning the general look and function of the planner app</p>
+                <ul>
+                    <li>
+                        Name: <i>Athena</i>
+                    </li>
+                    <li>
+                        Home page will be a calendar displaying the days in the month, 
+                        and clicking one of the days zooms you into the day for daily planning
+                    </li>
+                    <li>
+                        Will include UI to allow users to add events to days. 
+                        This will include the <strong>name, description, and time period</strong> of the 
+                        events
+                    </li>
+                    <li>
+                        Once events are finished, they will be crossed out, 
+                        so the user can easily understand what events are up next
+                    </li>
+                    <li>
+                        If we have time, we can also add an in-app reward system for 
+                        successfully completed events
+                    </li>
+                </ul>
+            </section>
 
+            <details>
+                <summary>Diagrams</summary>
+                    <img class="fit-picture"
+                        src="diagram.jpg"
+                        alt="Handrawn diagram of what our app is going to look like"
+                        width="350"
+                    />
+            </details>
+
+            <h2>Miscellaneous Comments</h2>
+                <textarea id="comment" name="comment" rows="4" cols="30">Enter your comments here:
+                </textarea>
+
+            <h2>Video Recording</h2>
+                
+                <video controls width="250">
+                    <source src="meeting.mp4" type="video/mp4">
+                </video>
+
+            <h2>Audio Recording</h2>
+                <figure>
+                    <audio controls>
+                        <source src="meeting.mp3" type="audio/mp3">
+                    </audio>
+                </figure>
         </main>
 
         <hr />
 
         <footer>
 
+            <form>
+                <label>Enter Discord Tag:
+                    <input text="submitted-tag"> 
+                </label>
+                <button>Submit</button>
+            </form>
+
+            <form>
+                <fieldset>
+                    <legend>Days Available</legend>
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" id="monday">
+                    <label for="tuesday">Tuesday</label>
+                    <input type="checkbox" id="tuesday">
+                    <label for="wednesday">Wednesday</label>
+                    <input type="checkbox" id="wednesday">
+                    <label for="thursday">Thursday</label>
+                    <input type="checkbox" id="thursday">
+                    <label for="friday">Friday</label>
+                    <input type="checkbox" id="friday">
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset>
+                    <legend>Are you ready to create this project?</legend>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes">
+                    <br>
+                    <label for="definetly">Definetly</label>
+                    <input type="radio" id="definetly">
+                    <br>
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="maybe">
+                </fieldset>
+            </form>
+
+            <form>
+                <label>Enter your birthday</label>
+                <input type="date">
+            </form>
+
+            <form>
+                <label for="os-choice">Choose which computer OS do you have:</label>
+                <input list="os-types" id="os" name="os-choice">
+
+                <datalist id="os-types">
+                    <option value="Windows"></option>
+                    <option value="Mac"></option>
+                    <option value="Linux"></option>
+                </datalist>
+            </form>
+            
+            <form>
+                <label for="chip-select">Choose favorite chip brand</label>
+                <select name="chips" id="chip-choice">
+                    <option value="">Choose one</option>
+                    <option value="lays">Lays</option>
+                    <option value="takis">Takis</otion>
+                    <option value="chootes">Cheetos</option>
+                </select>
+            </form>
         </footer>
     </body>
 </html>
