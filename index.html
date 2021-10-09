@@ -5,30 +5,29 @@
         <title>Planner Application First Brainstorm</title>
         <meta charset="utf-8">
         <link rel="icon" type="image/favicon.ico" href="favicon.ico">
+        <link rel="stylesheet" href="mystyle.css">
 
     </head>
     <body>
 
-        <header>
+        <header class = "intro">
 
-            <h1>Planner Application First Brainstorm</h1>
-            <p>Topic of Meeting: Specifications of how our group is going to create our planner app </p>
-            <p>Date: October 3, 2021</p>
+            <h1 class = "title">Planner Application First Brainstorm</h1>
+            <p class = "subtitle">Topic of Meeting: Specifications of how our group is going to create our planner app </p>
+            <p class = "subtitle">Date: October 3, 2021</p>
 
         </header>
 
         <main>
 
-            <div>
+            <div class = "flex-container" style = "color:brown">
                 <h2>Attendance List</h2>
-                <ul>
-                    <li>Grant</li>
-                    <li>Rishmal</li>
-                    <li>Jim</li>
-                </ul>
+                <div style="order: 2" style="flex-grow: 1">Rishmal</div>
+                <div style="order: 1" style="flex-grow: 1">Grant</div>
+                <div style="order: 3" style="flex-grow: 5">Jim</div>
             </div>
 
-            <nav>
+            <nav class = "agenda">
                 <h2>Meeting Agenda</h2>
                 <ol>
                     <li><a href="#communication">Last Meeting: Communication Method</a></li>
@@ -39,28 +38,26 @@
 
             <h2>Meeting Notes</h2>
 
-            <section id="communication">
+            <div class="communication">
                 <h3>Unfinished from Last Meeting: 0.0 Communication Method</h3>
                 <p>Deciding on the forms of communication that were discussed last meeting</p>
-                <ul>
-                    <li>
-                        <b class="keywords">Discord</b> will be the main method of communication 
+                <div class="grid-item">
+                    <b class="keywords">Discord</b> will be the main method of communication 
                         between our group
-                    </li>
-                    <li>
-                        A general chat will be created to allow for intercommunication 
-                        between different group roles, and there will be seperate chats that focus 
-                        on certain roles only
-                    </li>
-                    <li>
-                        People can also use <span class="app">iMessage</span>, <span class="app">Instagram</span>, 
-                        or <span class="app">WeChat</span>
-                    </li>
-                    <li>
-                        The Discord will be set up by the <em>end</em> of the day
-                    </li>
-                </ul>
-            </section>
+                </div>
+                <div class="grid-item">
+                    A general chat will be created to allow for intercommunication 
+                    between different group roles, and there will be seperate chats that focus 
+                    on certain roles only
+                </div>
+                <div class="grid-item">
+                    People can also use <span class="app">iMessage</span>, <span class="app">Instagram</span>, 
+                    or <span class="app">WeChat</span>
+                </div>
+                <div class="grid-item">
+                    The Discord will be set up by the <em>end</em> of the day
+                </div>
+            </div>
 
             <section id="language">
                 <h3>New: 1.0 Programming Language</h3>
@@ -81,7 +78,7 @@
             </section>
 
             <section id="high_level">
-                <h3>New: 2.0 High Level Planning of Planner</h3>
+                <h3><span class="new">New</span>: 2.0 High Level Planning of Planner</h3>
                 <p>Planning the general look and function of the planner app</p>
                 <ul>
                     <li>
@@ -108,11 +105,11 @@
             </section>
 
             <details>
-                <summary>Diagrams</summary>
+                <summary class = "diag">Diagrams</summary>
                     <img class="fit-picture"
                         src="diagram.jpg"
                         alt="Handrawn diagram of what our app is going to look like"
-                        width="350"
+                        width=350;
                     />
             </details>
 
@@ -122,13 +119,13 @@
 
             <h2>Video Recording</h2>
                 
-                <video controls width="250">
+                <video class = "video" controls min-width="500" height="500">
                     <source src="meeting.mp4" type="video/mp4">
                 </video>
 
             <h2>Audio Recording</h2>
                 <figure>
-                    <audio controls>
+                    <audio controls class = "audio" max-width=300px>
                         <source src="meeting.mp3" type="audio/mp3">
                     </audio>
                 </figure>
@@ -138,14 +135,14 @@
 
         <footer>
 
-            <form>
+            <form class="form">
                 <label>Enter Discord Tag:
                     <input type="text"> 
                 </label>
                 <button>Submit</button>
             </form>
 
-            <form>
+            <form class="form">
                 <fieldset>
                     <legend>Days Available</legend>
                     <label for="monday">Monday</label>
