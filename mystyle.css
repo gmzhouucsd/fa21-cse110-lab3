@@ -2,6 +2,13 @@ body {
     background-color: white;
 }
 
+/* changes color if media sees color */
+@media (color) {
+    body {
+        background-color: lightblue;
+    }
+}
+
 h1 {
   color: navy;
   text-decoration: green wavy underline;
