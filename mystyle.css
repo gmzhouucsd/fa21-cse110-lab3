@@ -1,3 +1,9 @@
+/* changes font */
+@font-face {
+  font-family: "Akronim";
+  src: url("Akronim-Regular.ttf");
+}
+
 body {
     background-color: white;
 }
