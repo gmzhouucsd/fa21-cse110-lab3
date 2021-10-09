@@ -69,3 +69,22 @@ li {
 .intro {
     text-align: center;
 }
+
+.subtitle {
+    border-style: ridge;
+    border-color: blueviolet;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+p {
+    position: relative;
+}
+
+button:hover {
+    color:yellow;
+}
+
+select:active {
+    color:red;
+}
