@@ -43,3 +43,29 @@ li {
     position: sticky;
     top:1px;
 }
+
+.diag {
+    border-style: dotted;
+    border-color: orangered;
+    border-width: 5px;
+    border-radius: 10px;
+
+    padding: 3px 3px 3px 3px;
+    margin: 10px 3px 3px 3px;
+    
+}
+
+.video {
+    border-style: dashed;
+    border-color: red;
+    border-width: 5px;
+    border-radius: 10px;
+
+    margin:auto;
+    
+    display: block;
+}
+
+.intro {
+    text-align: center;
+}
