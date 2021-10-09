@@ -16,12 +16,14 @@ body {
 }
 
 h1 {
-  color: navy;
-  text-decoration: green wavy underline;
-  font-family: "Akronim";
+    font-size: 3rem;
+    color: navy;
+    text-decoration: green wavy underline;
+    font-family: "Akronim";
 }
 
 h2 {
+    font-size: 1.5em; 
     color: rgb(255, 165, 0);
     position: static;
 }
@@ -64,7 +66,7 @@ li {
     border-radius: 10px;
 
     padding: 3px 3px 3px 3px;
-    margin: 10px 3px 3px 3px;
+    margin: .3cm 3pt 3px 3px;
     
 }
 
@@ -121,4 +123,37 @@ select:active {
 
 .communication div{
     border: 1px purple solid;
+}
+
+#high_level{
+    color: red;
+}
+
+*.form {
+    color: green;
+}
+
+a[href^="#"] {
+  background-color: plum;
+}
+
+#language, #high_level {
+    border: 1px green solid;
+}
+
+#high_level span.new {
+    color: red;
+}
+
+
+ul > li {
+    border: 1px orange solid; 
+}
+
+h3 + p {
+    text-decoration: pink wavy underline;
+}
+
+h3 ~ ul {
+    text-transform: uppercase;
 }
